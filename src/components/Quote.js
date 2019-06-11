@@ -28,9 +28,11 @@ class Quote extends React.Component {
         <div>
           <h2 className={styles.heading}>Quote</h2>
           {quotes.map(quote => (
-            <div>
+            <div className={styles.container}>
               <p>{quote.quote}</p>
-              <p>{quote.author}</p>
+              <p>
+                <b>{quote.author}</b>
+              </p>
             </div>
           ))}
         </div>

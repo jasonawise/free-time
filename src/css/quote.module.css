@@ -1,9 +1,18 @@
-.loading {
+.container {
   background-color: #fff;
-  height: 64px;
+  border-radius: 32px;
+  box-shadow: 5px 10px #001;
+  margin: auto;
+  padding: 16px;
   width: 75%;
 }
 
 .heading {
   font-size: 48px;
+}
+
+.loading {
+  background-color: #fff;
+  height: 64px;
+  width: 75%;
 }

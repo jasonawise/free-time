@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import styles from "../css/quote.module.css";
 
 class Quote extends React.Component {
   constructor(props) {
@@ -21,11 +22,11 @@ class Quote extends React.Component {
   render() {
     const { quotes, isLoaded } = this.state;
     if (!isLoaded) {
-      return <div>Loading... </div>;
+      return <div className={styles.loading}>Loading... </div>;
     } else {
       return (
         <div>
-          <h2>Quote</h2>
+          <h2 className={styles.heading}>Quote</h2>
           {quotes.map(quote => (
             <div>
               <p>{quote.quote}</p>
